@@ -21,6 +21,7 @@
     yasnippet
     helm
     projectile
+    helm-projectile
     web-mode
     typescript-mode
     tide

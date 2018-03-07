@@ -6,6 +6,14 @@
 
 (package-initialize)
 
+(defvar dotspacemacs-leader-key "SPC"
+  "The leader key.")
+
+(add-to-list 'load-path "~/.emacs.d/core/")
+
+(require 'core-keybindings)
+(require 'core-use-package-ext)
+
 (load "~/.emacs.d/my-loadpackages.el")
 
  (load "~/.emacs.d/modes/my-settings.el")
@@ -15,7 +23,7 @@
  (load "~/.emacs.d/modes/my-web.el")
  (load "~/.emacs.d/modes/my-projectile.el")
 
- ;;; (load "~/.emacs.d/modes/my-tide.el") ;;; pending
+ (load "~/.emacs.d/modes/my-tide.el") ;;; pending
 
 (add-hook 'after-init-hook '(lambda ()
   (load "~/.emacs.d/my-noexternals.el")
