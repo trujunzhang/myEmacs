@@ -12,7 +12,10 @@
 (defvar required-packages
   '(
     use-package
+    general
+    key-chord
     company
+    company-tern
     evil
     evil-leader
     project-explorer

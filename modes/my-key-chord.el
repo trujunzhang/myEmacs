@@ -1,0 +1,30 @@
+
+(require 'key-chord)
+(key-chord-mode 1)
+
+;; Max time delay between two key presses to be considered a key chord
+(setq key-chord-two-keys-delay 0.1) ; default 0.1
+   
+;; Max time delay between two presses of the same key to be considered a key chord.
+;; Should normally be a little longer than `key-chord-two-keys-delay'.
+(setq key-chord-one-key-delay 0.2) ; default 0.2
+
+
+;;; (key-chord-define-global "hj"     'undo)
+;;; (key-chord-define-global "SPC pp"  'helm-projectile-switch-to-buffer)
+
+;;; (global-set-key (kbd "SPC") 'helm-projectile-switch-to-buffer)
+
+(general-define-key
+ :states '(normal visual insert emacs)
+ :prefix "SPC"
+ :non-normal-prefix "M-SPC"
+  "'" '(iterm-focus :which-key "iterm")
+  "?" '(iterm-goto-filedir-or-home :which-key "iterm - goto dir")
+  "/" '(counsel-ag :wich-key "ag")
+  "TAB" '(spacemacs/alternate-buffer window )
+  "." '(avy-goto-word-or-subword-1  :which-key "go to word")
+  "SPC" '(counsel-M-x :which-key "M-x")
+  "pp" '(helm-projectile-switch-project :which-key "Switch Project")
+  "pf" '(helm-projectile-find-file :which-key "find files in the Project")
+  )

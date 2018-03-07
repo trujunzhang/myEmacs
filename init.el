@@ -13,8 +13,11 @@
 
 (require 'core-keybindings)
 (require 'core-use-package-ext)
+(require 'core-buffer)
 
 (load "~/.emacs.d/my-loadpackages.el")
+
+(require 'general)
 
  (load "~/.emacs.d/modes/my-settings.el")
  (load "~/.emacs.d/modes/my-evil.el")
@@ -23,7 +26,10 @@
  (load "~/.emacs.d/modes/my-web.el")
  (load "~/.emacs.d/modes/my-projectile.el")
 
- (load "~/.emacs.d/modes/my-tide.el") ;;; pending
+ (load "~/.emacs.d/modes/my-tide.el") 
+ (load "~/.emacs.d/modes/my-tern.el") 
+
+ (load "~/.emacs.d/modes/my-key-chord.el") 
 
 (add-hook 'after-init-hook '(lambda ()
   (load "~/.emacs.d/my-noexternals.el")

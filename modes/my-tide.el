@@ -1,3 +1,6 @@
+;;; tide setup
+;;; https://github.com/ananthakumaran/tide/blob/master/README.md
+
 (require 'tide)
 
 (defun setup-tide-mode ()
@@ -10,11 +13,11 @@
   ;; company is an optional dependency. You have to
   ;; install it separately via package-install
   ;; `M-x package-install [ret] company`
-  ;; (company-mode +1)
+  (company-mode +1)
   )
 
 ;; aligns annotation to the right hand side
-;;; (setq company-tooltip-align-annotations t)
+(setq company-tooltip-align-annotations t)
 
 ;; formats the buffer before saving
 (add-hook 'before-save-hook 'tide-format-before-save)
@@ -23,7 +26,6 @@
 
 ;;; format 
 (setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
-
 
 ;;; tsx
 (require 'web-mode)
@@ -49,5 +51,7 @@
 ;; configure jsx-tide checker to run after your default jsx checker
 (flycheck-add-mode 'javascript-eslint 'web-mode)
 (flycheck-add-next-checker 'javascript-eslint 'jsx-tide 'append)
+
+
 
 
