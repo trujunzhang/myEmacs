@@ -11,7 +11,7 @@
   ;; (define-key company-active-map (kbd "C-c h") #'company-quickhelp-manual-begin)
   ;; Use TAB key only for completion selection
   ;; Binds these keys
-  (global-set-key (kbd "TAB") #'company-indent-or-complete-common)
+  ;; (global-set-key (kbd "TAB") #'company-indent-or-complete-common)
   ;;   (define-key company-active-map (kbd "TAB") 'company-select-next)
   ;;   (define-key company-active-map (kbd "<backtab>") 'company-select-previous)
   ;;   (define-key company-active-map (kbd "RET") nil)

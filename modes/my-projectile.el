@@ -36,3 +36,12 @@
 
 (helm/init-helm-projectile)
 
+
+
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
+
+;;; set default project
+
+
+
