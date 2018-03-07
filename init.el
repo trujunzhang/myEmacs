@@ -18,6 +18,7 @@
 (load "~/.emacs.d/my-loadpackages.el")
 
 (require 'general)
+(require 'hydra)
 
  (load "~/.emacs.d/modes/my-settings.el")
  (load "~/.emacs.d/modes/my-evil.el")

@@ -14,6 +14,7 @@
     use-package
     general
     key-chord
+    hydra
     company
     company-tern
     evil

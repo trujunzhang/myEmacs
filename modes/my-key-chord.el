@@ -27,4 +27,33 @@
   "SPC" '(counsel-M-x :which-key "M-x")
   "pp" '(helm-projectile-switch-project :which-key "Switch Project")
   "pf" '(helm-projectile-find-file :which-key "find files in the Project")
+  "sp" '(helm-projectile-grep :which-key "find files in the Project")
+  "pr" '(helm-projectile-recentf :which-key "recent in the Project")
   )
+
+
+(defhydra hydra-buffer-menu (global-map "<SPC>")
+  "
+                Buffers :
+  "
+  ("n" next-buffer "next" :color red)
+  ("b" ivy-switch-buffer "switch")
+  ("B" ibuffer "ibuffer")
+  ("p" previous-buffer "prev" :color red)
+  ("C-b" buffer-menu "buffer menu")
+  ("N" evil-buffer-new "new")
+  ("d" kill-this-buffer "delete" :color red)
+  ;; don't come back to previous buffer after delete
+  ("D" (progn (kill-this-buffer) (next-buffer)) "Delete" :color red)
+  ("s" save-buffer "save" :color red))
+
+
+
+
+
+
+
+
+
+
+
