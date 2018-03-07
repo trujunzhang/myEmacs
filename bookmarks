@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("my-tide.el"
+ (filename . "~/.emacs.d/modes/my-tide.el")
+ (front-context-string . "  (interactive)\n")
+ (rear-context-string . "up-tide-mode ()\n")
+ (position . 28))
+("UserLoginLayout.tsx"
+ (filename . "~/Desktop/upwork-projects/WORKING/politicl/politicl-expo/src/components/lib/usersign/UserLoginLayout.tsx")
+ (front-context-string . "    View,\n    St")
+ (rear-context-string . "ort {\n    Text,\n")
+ (position . 243))
+)

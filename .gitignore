@@ -1,0 +1,9 @@
+*.el~
+
+*.el#
+
+*.bak
+
+auto-save-list/
+
+elpa/
