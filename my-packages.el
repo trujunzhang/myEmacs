@@ -11,10 +11,14 @@
 
 (defvar required-packages
   '(
+    use-package
+    company
+    evil
+    evil-leader
+    project-explorer
     flycheck
     magit
     yasnippet
-    evil
     helm
     projectile
     web-mode

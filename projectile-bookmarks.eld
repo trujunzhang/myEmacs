@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Desktop/upwork-projects/WORKING/politicl/politicl-expo/")
+("~/.emacs.d/" "~/Desktop/upwork-projects/WORKING/politicl/politicl-expo/" "~/.emacs.d.03-06-2018/")

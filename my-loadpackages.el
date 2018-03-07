@@ -16,15 +16,3 @@
 (yas-load-directory "~/.emacs.d/snippets")
 (add-hook 'term-mode-hook (lambda()
     (setq yas-dont-activate t)))
-
-;; https://www.emacswiki.org/emacs/Evil
- (require 'evil)
- (evil-mode 1)
-
-;; evil plugins
-;; https://github.com/emacs-evil/evil-surround
-(use-package evil-surround
-  :ensure t
-  :config
-  (global-evil-surround-mode 1))
-

@@ -8,15 +8,19 @@
 
 (load "~/.emacs.d/my-loadpackages.el")
 
-(load "~/.emacs.d/modes/my-helm.el")
-(load "~/.emacs.d/modes/my-projectile.el")
-(load "~/.emacs.d/modes/my-settings.el")
-(load "~/.emacs.d/modes/my-web.el")
-(load "~/.emacs.d/modes/my-tide.el")
+ (load "~/.emacs.d/modes/my-settings.el")
+ (load "~/.emacs.d/modes/my-evil.el")
+ (load "~/.emacs.d/modes/my-helm.el")
+ (load "~/.emacs.d/modes/my-company.el")
+ (load "~/.emacs.d/modes/my-web.el")
+ (load "~/.emacs.d/modes/my-projectile.el")
+
+ ;;; (load "~/.emacs.d/modes/my-tide.el") ;;; pending
 
 (add-hook 'after-init-hook '(lambda ()
   (load "~/.emacs.d/my-noexternals.el")
 ))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

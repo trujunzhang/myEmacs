@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("my-tide.el"
+(("my-packages.el"
+ (filename . "~/.emacs.d/my-packages.el")
+ (front-context-string . "r\n    flycheck\n ")
+ (rear-context-string . " project-explore")
+ (position . 378))
+("my-keys.el"
+ (filename . "~/.emacs.d/modes/my-keys.el")
+ (front-context-string)
+ (rear-context-string)
+ (position . 1))
+("my-tide.el"
  (filename . "~/.emacs.d/modes/my-tide.el")
  (front-context-string . "  (interactive)\n")
  (rear-context-string . "up-tide-mode ()\n")
