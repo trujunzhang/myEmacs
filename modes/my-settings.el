@@ -26,3 +26,5 @@
           '(
             (tool-bar-lines . 0)))))
 
+  ;; Auto-save on focus out
+  (add-hook 'focus-out-hook 'spacemacs/sooheon-save-all)

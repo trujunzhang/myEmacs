@@ -29,6 +29,7 @@
   "pf" '(helm-projectile-find-file :which-key "find files in the Project")
   "sp" '(helm-projectile-grep :which-key "find files in the Project")
   "pr" '(helm-projectile-recentf :which-key "recent in the Project")
+  "bb" '(helm-buffers-list :which-key "buffer list")
   )
 
 

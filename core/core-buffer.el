@@ -18,5 +18,9 @@ current window."
          ;; `other-buffer' honors `buffer-predicate' so no need to filter
          (other-buffer current-buffer t)))))
 
+  (defun spacemacs/sooheon-save-all()
+    (interactive)
+    (save-some-buffers t))
+ 
 
 (provide 'core-buffer)
