@@ -22,7 +22,7 @@
   "'" '(iterm-focus :which-key "iterm")
   "?" '(iterm-goto-filedir-or-home :which-key "iterm - goto dir")
   "/" '(counsel-ag :wich-key "ag")
-  "TAB" '(spacemacs/alternate-buffer window )
+  "TAB" '(spacemacs/alternate-buffer :which-key "last buffer")
   "." '(avy-goto-word-or-subword-1  :which-key "go to word")
   "SPC" '(counsel-M-x :which-key "M-x")
   "pp" '(helm-projectile-switch-project :which-key "Switch Project")
